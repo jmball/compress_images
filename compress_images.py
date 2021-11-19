@@ -34,7 +34,7 @@ def compress_images(path, quality):
         folder = path
         files = [f for f in path.iterdir()]
     elif path.is_file():
-        folder = path.parent()
+        folder = path.parent
         files = [path]
 
     for f in files:
